@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  * @author LidiaE_18
  */
-@Controller
+@Controller//llama donde se este escuchando
 
 public class HomeControler  extends BaseController{
     
