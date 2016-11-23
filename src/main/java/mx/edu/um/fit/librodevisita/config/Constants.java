@@ -20,7 +20,7 @@ public class Constants {
     public static final String DEFAULT_STRING_BARCODE = "0000000000";
     //CODES
     public static final String AREA_START_CODE = "A";
-    public static final String MACHINE_START_CODE = "M";
+    public static final String LOCALIZACION_START_CODE = "L";
     public static final String USER_START_CODE = "U";
     public static final String SELLER_START_CODE = "S";
     public static final String CUSTOMER_START_CODE = "C";
@@ -65,8 +65,8 @@ public class Constants {
     public static final String AREA_UI="area";
     public static final String AREA_LIST_UI="areaList";
     //
-    public static final String MACHINE_UI="machine";
-    public static final String MACHINE_LIST_UI="machineList";
+    public static final String LOCALIZACION_UI="localizacion";
+    public static final String LOCALIZACION_LIST_UI="localizacionList";
     //
     public static final String SELLER_UI="seller";
     public static final String SELLER_LIST_UI="sellerList";

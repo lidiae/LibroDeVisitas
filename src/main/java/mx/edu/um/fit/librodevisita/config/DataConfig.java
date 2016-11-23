@@ -88,7 +88,7 @@ public class DataConfig {
                 pp.setProperty("hibernate.default_schema", hibernateSchema);
                 
                 factoryBean.setDataSource(dataSource());
-                factoryBean.setPackagesToScan("mx.edu.um.dii.labinterfaces.diasetproject.model");
+                factoryBean.setPackagesToScan("mx.edu.um.fit.librodevisita.model");
                 factoryBean.setHibernateProperties(pp);
                 factoryBean.afterPropertiesSet();
                 return factoryBean.getObject();                

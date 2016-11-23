@@ -13,9 +13,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title><sitemesh:write property="title"/></title>
+    <link rel="stylesheet" href="<s:url value='/css/bootstrap.min.css'/>">
+
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Hello World HOME!</h1>
+        <h2>Hola chavos CASA!</h2>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <h2>Chale /KHE</h2>
+        <div class="container">
+            <sitemesh:write property='body'/>
+        </div>
+        <script src="<c:url value='/js/jquery.min.js'/>"</script><!--siempre va primero que bootstrap-->
+        <script src="<c:url value='/js/bootstrap.min.js'/>"</script>
+        <sitemesh:write property="content"/>
     </body>
 </html>
