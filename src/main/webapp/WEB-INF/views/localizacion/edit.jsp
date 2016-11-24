@@ -1,6 +1,6 @@
 <%-- 
-    Document   : main
-    Created on : Oct 7, 2016, 11:43:54 AM
+    Document   : edit
+    Created on : Nov 24, 2016, 11:19:29 AM
     Author     : LidiaE_18
 --%>
 
@@ -13,17 +13,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title><sitemesh:write property="title"/></title>
-    <link rel="stylesheet" href="<s:url value='/css/bootstrap.min.css'/>">
-
+         <title><h1>Editar Localizacion></h1></title>
     </head>
     <body>
-        <h1>Main</h1>
         <div class="container">
-            <sitemesh:write property='body'/>
-        </div>
-        <script src="<c:url value='/js/jquery.min.js'/>"</script><!--siempre va primero que bootstrap-->
-        <script src="<c:url value='/js/bootstrap.min.js'/>"</script>
-        <sitemesh:write property="content"/>
+            <div class="row">
+                <legend><p>Editar Localizacion</p></legend>
+                <jsp:include page="form.jsp" >
+                    <jsp:param name="type" value="EDIT" />
+                </jsp:include>
+            </div><!--/.row-->
+        </div><!--/.container-->
     </body>
 </html>

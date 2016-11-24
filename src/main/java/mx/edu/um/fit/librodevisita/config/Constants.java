@@ -62,20 +62,10 @@ public class Constants {
     public static final String MESSAGE_UI="message";
     public static final String MESSAGE_ATTRS_UI="messageAttrs";
     //
-    public static final String AREA_UI="area";
-    public static final String AREA_LIST_UI="areaList";
     //
     public static final String LOCALIZACION_UI="localizacion";
     public static final String LOCALIZACION_LIST_UI="localizacionList";
     //
-    public static final String SELLER_UI="seller";
-    public static final String SELLER_LIST_UI="sellerList";
-    //
-    public static final String CUSTOMER_UI="customer";
-    public static final String CUSTOMER_LIST_UI="customerList";
-    //
-    public static final String WORK_ORDER_UI="workOrder";
-    public static final String WORK_ORDER_LIST_UI="workOrderList";
     /*
     Password
     */

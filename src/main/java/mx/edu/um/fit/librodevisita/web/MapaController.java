@@ -7,6 +7,7 @@ package mx.edu.um.fit.librodevisita.web;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import mx.edu.um.fit.librodevisita.config.Constants;
 import mx.edu.um.fit.librodevisita.model.Localizacion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,9 +31,7 @@ public class MapaController extends BaseController{
     public String newLocalizacion(Model model) {
         log.debug("New Localizacion...");
         Localizacion localizacion= new Localizacion();//
-        //Localizacion localizacion = new Machine();
-        
-        //model.addAttribute(Constants.MACHINE_UI, machine);
+        model.addAttribute(Constants.LOCALIZACION_UI, localizacion);
       
 
         return "/localizacion/new";
