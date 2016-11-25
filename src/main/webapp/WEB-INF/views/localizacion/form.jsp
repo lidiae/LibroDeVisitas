@@ -43,6 +43,14 @@
                     <form:input path="latitud" class="form-control" placeholder="Latitud"/>
                 </div>                                
             </div>
-        </s:bind>   
+        </s:bind>
+         <s:bind path="localizacion.longitud">
+            <div class="form-group">
+                <label for="name" class="control-label col-xs-2">Longitud</label>    
+                <div class="col-xs-5">
+                    <form:input path="longitud" class="form-control" placeholder="Longitud"/>
+                </div>                                
+            </div>
+        </s:bind> 
     </fieldset>
 </form:form>
