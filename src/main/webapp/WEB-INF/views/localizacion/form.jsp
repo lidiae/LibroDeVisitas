@@ -53,4 +53,27 @@
             </div>
         </s:bind> 
     </fieldset>
+     <c:choose>
+        <c:when test="${param.type=='NEW'}">
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <form:button id="saveBtn" name="saveBtn" class="btn btn-primary btn-large" value="save">
+                        <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    </form:button>
+                    <a class="btn btn-default" href="<c:url value="/"/>"><s:message code="cancel.label"/><span class="glyphicon glyphicon-erase"></span></a>
+                </div>
+            </div>
+        </c:when>
+        <c:otherwise>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <form:button id="updateBtn" name="updateBtn" class="btn btn-primary btn-large" value="update">
+                        <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> <s:message code="update.label"/>
+                    </form:button>
+                    <a class="btn btn-danger" href="<c:url value="/localizacion/delete/${localizacion.id}"/>" onclick="return confirm('<s:message code="confirm.delete.message" />');" ><s:message code="delete.label"/> <span class="glyphicon glyphicon-trash"></span></a>
+                    <a class="btn btn-default" href="<c:url value="/"/>"><s:message code="cancel.label"/> <span class="glyphicon glyphicon-erase"></span></a>
+                </div>
+            </div>
+        </c:otherwise>
+    </c:choose>
 </form:form>

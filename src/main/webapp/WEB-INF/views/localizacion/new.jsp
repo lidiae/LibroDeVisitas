@@ -13,7 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title><h1>Nueva Localizacion></h1></title>
+        <title>Nueva Localizacion</title>
     </head>
     <body>
         <div class="container">
