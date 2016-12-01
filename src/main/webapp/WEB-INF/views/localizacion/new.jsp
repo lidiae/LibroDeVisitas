@@ -18,7 +18,7 @@
     <body>
         <div class="container">
             <div class="row">
-                <legend><p>Nueva Localizacion</p></legend>
+                <legend>Nueva Localizacion</legend>
                 <jsp:include page="form.jsp">
                     <jsp:param name="type" value="NEW"/>
                 </jsp:include>

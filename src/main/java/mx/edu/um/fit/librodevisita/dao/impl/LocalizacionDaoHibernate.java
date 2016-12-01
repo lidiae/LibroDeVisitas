@@ -43,7 +43,8 @@ public class LocalizacionDaoHibernate extends BaseDao implements LocalizacionDao
 
     @Override
     public Localizacion save(Localizacion localizacion) {
-        return localizacion; //To change body of generated methods, choose Tools | Templates.
+        currentSession().save(localizacion);
+        return(localizacion);
     }
 
     @Override

@@ -17,15 +17,8 @@
         <c:url var="action" value="/localizacion/update"/>        
     </c:otherwise>
 </c:choose>
-<form:form modelAttribute="localizacion" method="post" action="${action}" class="form-horizontal" data-parsley-validate="">
-    <form:errors path="*">
-        <c:forEach items="${messages}" var="message">
-            <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <span class="glyphicon glyphicon-alert"></span> <strong>${message}</strong>
-            </div>
-        </c:forEach>                        
-    </form:errors>
+
+<form:form modelAttribute="localizacion" method="post" action="${action}">
 <!--Check id,version,username-->
     <fieldset>
         <c:choose>
@@ -36,6 +29,7 @@
                 <form:hidden path="version" />
             </c:otherwise>
         </c:choose>
+        
         <s:bind path="localizacion.latitud">
             <div class="form-group">
                 <label for="name" class="control-label col-xs-2">Latitud</label>    
@@ -44,6 +38,7 @@
                 </div>                                
             </div>
         </s:bind>
+        <br>
          <s:bind path="localizacion.longitud">
             <div class="form-group">
                 <label for="name" class="control-label col-xs-2">Longitud</label>    
@@ -53,8 +48,10 @@
             </div>
         </s:bind> 
     </fieldset>
+
      <c:choose>
         <c:when test="${param.type=='NEW'}">
+            <br>
             <div class="form-group">
                 <div class="col-xs-offset-2 col-xs-10">
                     <form:button id="saveBtn" name="saveBtn" class="btn btn-primary btn-large" value="save">
@@ -76,4 +73,5 @@
             </div>
         </c:otherwise>
     </c:choose>
+            
 </form:form>
