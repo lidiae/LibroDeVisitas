@@ -12,8 +12,10 @@
 
     </head>
     <body>
-        <h1>index
-        </h1>
+        <h1>Bienvenido al libro de visitas!</h1>
+        <p>Para crear una nueva localizacion</p>
+       <a href="/LibroDeVisita/localizacion/new" class="btn btn-primary" role="button">Nuevo</a>
+        
          <script src="js/bootstrap.min.js"></script>
          <script src="js/jquery.min.js"></script>
     </body>

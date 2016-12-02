@@ -15,15 +15,31 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><sitemesh:write property="title"/></title>
     <link rel="stylesheet" href="<s:url value='/css/bootstrap.min.css'/>">
-
+ 
     </head>
     <body>
-        <h1>Main</h1>
+       
+      <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  Libro de Visitas</a>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="/LibroDeVisita/">Inicio</a></li>
+      <li><a href="/LibroDeVisita/localizacion/new">Nuevo</a></li>
+      <li><a href="/LibroDeVisita/localizacion/list">Lista</a></li>
+    </ul>
+  </div>
+         
+</nav>
+            
         <div class="container">
             <sitemesh:write property='body'/>
         </div>
         <script src="<c:url value='/js/jquery.min.js'/>"</script><!--siempre va primero que bootstrap-->
         <script src="<c:url value='/js/bootstrap.min.js'/>"</script>
         <sitemesh:write property="content"/>
-    </body>
+          
+</body>
+    
 </html>
